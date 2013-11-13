@@ -39,10 +39,7 @@
     "cli-color": "*",
     "commander": "*",
     "read": "*",
-    "moment": "*",
-    "express": "*",
-    "socket.io": "*",
-    "open": "*"
+    "moment": "*"
   },
   "devDependencies": {
       "proxyquire": "*"

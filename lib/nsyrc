@@ -10,8 +10,7 @@ var nsyrc_cli = rek('nsyrc-cli');
 
 cli
     .version(version)
-    .usage("[ gui | show | link [ from <SOURCE> to <TARGET> ] | unlink [id] | empty | run [id] ]")
-    .option("-g, gui", "start web interface for nsyrc in your default browser")
+    .usage("[ show | link [ from <SOURCE> to <TARGET> ] | unlink [id] | empty | run [id] ]")
     .option("show", "print the nsyrc links for the current folder. same as just 'nsyrc'")
     .option("link", "set a new nsyrc link")
     .option("from <path>", "source of a new link. works only together with 'link' and 'to'")
@@ -35,10 +34,6 @@ if (cli.link && cli.from && cli.to) {
     nsyrc_cli.show();
 } else if (cli.run) {
     nsyrc_cli.run(cli.run, cli.wet);
-} else if (cli.gui) {
-    rek('nsyrc-gui').start({
-        version: version
-    });
 } else {
-    cli.help();
+    nsyrc_cli.show();
 }
