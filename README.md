@@ -10,14 +10,14 @@ $ npm install -g nsyrc
 * * *
 ### Usage
 
-`nsyrc show` or just `nsyrc` shows you the list of your defined links.
+`nsyrc` shows you the list of your defined links.
 Here is the result of running `nsyrc` with [this .nsyrc file](https://github.com/danyshaanan/nsyrc/blob/master/doc/dot.nsyrc_example):
 
 ![Screen shot of a result of `nsyrc show`](https://raw.github.com/danyshaanan/nsyrc/master/doc/nsyrc_example.png?raw=true)
 
 Each row represents a link. The padded columns are, from left to right:
 
-* id - used with `nsyrc run` or `nsyrc unlink`
+* id - used for syncing or removing links.
 * Source folder, Target folder, which are marked with these colors:
  * Green: local existing folder
  * Yellow: remote folders, which are not checked for existance
@@ -30,15 +30,18 @@ Each row represents a link. The padded columns are, from left to right:
 A pending feature will enable the user to set those period of time.
 
 
-`nsyrc link` or `nsyrc link from FOLDER1 to FOLDER2` creates a new link.
+`nsyrc -l <source> <target>` creates a new link.
 
-`nsyrc run ID` prompts the user to run the link with --dry-run first, and then without.
+`nsyrc <id>` prompts the user to run the link with --dry-run first, and then without. Use `--wet` to skip dry-run.
 
-`nsyrc unlink ID` trashes a link. `nsyrc empty` empties the trash. The trash is currently only accessible through opening ~/.nsyrc
+`nsyrc -t <id>` trashes a link. `nsyrc -e` empties the trash. The trash is currently only accessible through opening ~/.nsyrc
 
+<!---
+This image is deprecated!! Should recreate.
 Here is the creation and execution of a link, starting with an empty .nsyrc file:
 
 ![nsyrc show, link run, and show again](https://raw.github.com/danyshaanan/nsyrc/master/doc/nsyrc_process_example.png?raw=true)
+-->
 
 * * *
 ### Info
@@ -48,8 +51,6 @@ Here is the creation and execution of a link, starting with an empty .nsyrc file
 * * *
 ### TODOs
 
-* Write tests
-* Create a github page
 * [Close open issues](https://github.com/danyshaanan/nsyrc/issues)
 
 * * *
