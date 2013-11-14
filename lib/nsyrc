@@ -3,6 +3,7 @@
 "use strict";
 
 var cli = require('commander');
+var clc = require('cli-color');
 var rek = require('rekuire');
 var version = rek('package.json').version;
 
@@ -10,30 +11,32 @@ var nsyrc_cli = rek('nsyrc-cli');
 
 cli
     .version(version)
-    .usage("[ show | link [ from <SOURCE> to <TARGET> ] | unlink [id] | empty | run [id] ]")
-    .option("show", "print the nsyrc links for the current folder. same as just 'nsyrc'")
-    .option("link", "set a new nsyrc link")
-    .option("from <path>", "source of a new link. works only together with 'link' and 'to'")
-    .option("to <path>", "target of a new link. works only together with 'link' and 'from'")
-    .option("unlink [id]", "remove a link", parseInt)
-    .option("empty", "remove all unlinked links from the trash")
-    .option("run [id]", "run a link", parseInt)
-    .option("wet", "skip dry-runs")
+    .usage("[ [-r] <id> | -l <source> <target> | -t <id> ]")
+    .option("-l, --link", "create a link from <source> to <target>")
+    .option("-r, --run <id>", "run a link by id (can be used without '-r', as in 'nsyrc 1')", parseInt)
+    .option("-t, --trash <id>", "remove a link by id", parseInt)
+    .option("-e, --empty", "remove all unlinked links from the trash")
+    .option("-w, --wet", "skip dry-run")
     .parse(process.argv);
 
+var targets = process.argv.slice(2).filter(function(v) { return v.indexOf("-") != 0; });
 
-if (cli.link && cli.from && cli.to) {
-    nsyrc_cli.createLink(cli.from, cli.to);
-} else if (cli.link) {
-    nsyrc_cli.createLink();
-} else if (cli.unlink) {
-    nsyrc_cli.unlink(cli.unlink);
+
+
+
+
+if (cli.link) {
+    if (targets.length == 2) {
+        nsyrc_cli.createLink(targets[0], targets[1]);
+    } else {
+        console.log(clc.red("'--link' takes two arguments! Try again, like so: 'nsyrc --link <source> <target>'"));
+    }
+} else if (cli.trash) {
+    nsyrc_cli.unlink(cli.trash);
 } else if (cli.empty) {
     nsyrc_cli.emptyTrash();
-} else if (cli.show) {
-    nsyrc_cli.show();
-} else if (cli.run) {
-    nsyrc_cli.run(cli.run, cli.wet);
+} else if (cli.run || targets.length == 1) {
+    nsyrc_cli.run(cli.run || parseInt(targets[0]), cli.wet);
 } else {
     nsyrc_cli.show();
 }
