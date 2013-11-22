@@ -34,6 +34,8 @@ A pending feature will enable the user to set those period of time.
 
 `nsyrc <id>` prompts the user to run the link with --dry-run first, and then without. Use `--wet` to skip dry-run.
 
+`nsyrc -n` does the same for the first link that was not synced in the last 24 hours.
+
 `nsyrc -t <id>` trashes a link. `nsyrc -e` empties the trash. The trash is currently only accessible through opening ~/.nsyrc
 
 <!---
