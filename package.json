@@ -1,6 +1,6 @@
 {
   "name": "nsyrc",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A command line tool for easily defining and maintaining rsync backups",
   "keywords": ["rsync", "nsyrc", "cli", "backup"],
   "homepage": "https://github.com/danyshaanan/nsyrc",
