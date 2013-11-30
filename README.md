@@ -49,6 +49,7 @@ Here is the creation and execution of a link, starting with an empty .nsyrc file
 ### Info
 * The links data is saved as json in ~/.nsyrc
 * The default for the dry-run prompt is YES, while the default of the wet-run prompt is NO.
+* Common use is for syncing folders, by defining links between files is also possible.
 
 * * *
 ### TODOs
