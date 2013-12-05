@@ -60,3 +60,8 @@ Here is the creation and execution of a link, starting with an empty .nsyrc file
 ### Disclaimer
 
 While nsyrc tries to distance the user from the dangers of using rsync directly, it is still a program that runs rsync commands, and that was written by a human being, and no one can guarantee that it is devoid of bugs or unexpected behaviors, therefore use this software at your own risk.
+
+* * *
+### Feedback
+* I'd love to get any feedback you might have, to my email address, which is my username at gmail dot com.
+* More material appreciation is welcome in the form of bitcoins, to the address in [this page](http://danyshaanan.com/bitcoin).
