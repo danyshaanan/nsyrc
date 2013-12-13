@@ -18,12 +18,13 @@ cli
     .option("-t, --trash <id>", "remove a link by id", parseInt)
     .option("-e, --empty", "remove all unlinked links from the trash")
     .option("-w, --wet", "skip dry-run")
+    .option("-c, --current-directory", "use the .nsyrc file that is in the current directory")
     .parse(process.argv);
 
 var targets = process.argv.slice(2).filter(function(v) { return v.indexOf("-") != 0; });
 
 
-
+if (cli.currentDirectory) nsyrc_cli.currentDirectory();
 
 
 if (cli.link) {
