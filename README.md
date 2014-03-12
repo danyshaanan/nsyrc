@@ -52,11 +52,6 @@ Here is the creation and execution of a link, starting with an empty .nsyrc file
 * Common use is for syncing folders, but defining links between files is also possible.
 
 * * *
-### TODOs
-
-* [Close open issues](https://github.com/danyshaanan/nsyrc/issues)
-
-* * *
 ### Disclaimer
 
 While nsyrc tries to distance the user from the dangers of using rsync directly, it is still a program that runs rsync commands, and that was written by a human being, and no one can guarantee that it is devoid of bugs or unexpected behaviors, therefore use this software at your own risk.
