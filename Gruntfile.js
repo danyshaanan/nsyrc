@@ -16,6 +16,7 @@ module.exports = function(grunt) {
           node: true,
           unused: 'vars',
           globalstrict: true,
+          validthis: true,
           // eqeqeq: true,
           forin: true,
           latedef: true,
