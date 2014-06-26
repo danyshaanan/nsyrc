@@ -25,7 +25,6 @@
     "email" : "danyshaanan@gmail.com"
   },
   "preferGlobal": true,
-  "main": "./lib/nsyrc-cli.js",
   "man" : "./man/doc.1",
   "scripts": {
     "test": "jasmine-node ./test/",
