@@ -25,7 +25,6 @@
     "email" : "danyshaanan@gmail.com"
   },
   "preferGlobal": true,
-  "man" : "./man/doc.1",
   "scripts": {
     "test": "jasmine-node ./test/",
     "start": "node ."
