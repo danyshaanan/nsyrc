@@ -10,21 +10,27 @@ module.exports = function(grunt) {
     //   }
     // },
     jshint: {
+      options: {
+        node: true,
+        unused: 'vars',
+        globalstrict: true,
+        validthis: true,
+        // eqeqeq: true,
+        forin: true,
+        latedef: true,
+        quotmark: 'single',
+        undef: true,
+        trailing: true,
+        lastsemic: true,
+        asi: true
+      },
       src: {
-        src: ['lib/**/*.*'],
+        src: ['lib/**/*.*']
+      },
+      test: {
+        src: ['test/**/*.*'],
         options: {
-          node: true,
-          unused: 'vars',
-          globalstrict: true,
-          validthis: true,
-          // eqeqeq: true,
-          forin: true,
-          latedef: true,
-          quotmark: 'single',
-          undef: true,
-          trailing: true,
-          lastsemic: true,
-          asi: true
+          jasmine: true
         }
       }
     }
