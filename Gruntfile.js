@@ -23,7 +23,8 @@ module.exports = function(grunt) {
           quotmark: 'single',
           undef: true,
           trailing: true,
-          lastsemic: true
+          lastsemic: true,
+          asi: true
         }
       }
     }
