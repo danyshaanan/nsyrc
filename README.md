@@ -21,7 +21,7 @@ Each row represents a link. The padded columns are, from left to right:
 * Source folder, Target folder, which are marked with these colors:
  * Green: local existing folder
  * Yellow: remote folders, which are not checked for existance
- * Red: local non-existing folders, probably folders on removeable media
+ * Gray: local non-existing folders, probably folders on removeable media
 * How long ago it was last synced, which is marked with these colors that represent predefined periods of time:
  * White: less than a day
  * Yellow: more than a day and less than a week

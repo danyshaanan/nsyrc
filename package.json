@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "rekuire": "*",
-    "cli-color": "*",
+    "chalk": "~0.5.1",
     "commander": "*",
     "read": "*",
     "moment": "*",
