@@ -42,7 +42,7 @@
     "rekuire": "*",
     "chalk": "~0.5.1",
     "commander": "*",
-    "read": "*",
+    "inquirer": "~0.6.0",
     "moment": "*",
     "columnify": "~1.1.0"
   },
