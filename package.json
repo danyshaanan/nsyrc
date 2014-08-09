@@ -2,7 +2,12 @@
   "name": "nsyrc",
   "version": "0.0.19",
   "description": "A command line tool for easily defining and maintaining rsync backups",
-  "keywords": ["rsync", "nsyrc", "cli", "backup"],
+  "keywords": [
+    "rsync",
+    "nsyrc",
+    "cli",
+    "backup"
+  ],
   "homepage": "https://github.com/danyshaanan/nsyrc",
   "author": {
     "name": "Dany Shaanan",
@@ -21,8 +26,8 @@
     "url": "git://github.com/danyshaanan/nsyrc.git"
   },
   "bugs": {
-    "url" : "https://github.com/danyshaanan/nsyrc",
-    "email" : "danyshaanan@gmail.com"
+    "url": "https://github.com/danyshaanan/nsyrc",
+    "email": "danyshaanan@gmail.com"
   },
   "preferGlobal": true,
   "scripts": {
@@ -31,7 +36,7 @@
   },
   "main": "./lib/nsyrc.js",
   "bin": {
-      "nsyrc" : "./lib/nsyrc-cli.js"
+    "nsyrc": "./lib/nsyrc-cli.js"
   },
   "dependencies": {
     "rekuire": "*",
