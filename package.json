@@ -44,7 +44,7 @@
     "commander": "*",
     "inquirer": "~0.6.0",
     "moment": "*",
-    "columnify": "~1.1.0"
+    "columnify": "~1.2.1"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
