@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         asi: true
       },
       src: {
-        src: ['lib/**/*.*']
+        src: ['src/**/*.*']
       },
       test: {
         src: ['test/**/*.*'],

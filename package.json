@@ -34,9 +34,9 @@
     "test": "jasmine-node ./test/",
     "start": "node ."
   },
-  "main": "./lib/nsyrc.js",
+  "main": "./src/nsyrc.js",
   "bin": {
-    "nsyrc": "./lib/nsyrc-cli.js"
+    "nsyrc": "./src/nsyrc-cli.js"
   },
   "dependencies": {
     "rekuire": "*",
