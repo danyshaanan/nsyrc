@@ -38,12 +38,6 @@ A pending feature will enable the user to set those period of time.
 
 `nsyrc -t <id>` trashes a link. `nsyrc -e` empties the trash. The trash is currently only accessible through opening ~/.nsyrc
 
-<!---
-This image is deprecated!! Should recreate.
-Here is the creation and execution of a link, starting with an empty .nsyrc file:
-
-![nsyrc show, link run, and show again](https://raw.github.com/danyshaanan/nsyrc/master/doc/nsyrc_process_example.png?raw=true)
--->
 
 * * *
 ### Info

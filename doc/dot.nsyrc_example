@@ -4,43 +4,43 @@
       "source": "/Users/dany/wip/",
       "target": "server:/home/dany/backups/wip/",
       "id": 1,
-      "lastSynced": 1376704700000
+      "lastSynced": 1407866953550
     },
     {
       "source": "/Users/dany/git/",
       "target": "server:/home/dany/backups/git/",
       "id": 2,
-      "lastSynced": 1376640079876
+      "lastSynced": 1407846766515
     },
     {
       "source": "dany@server:~/",
       "target": "/Users/dany/backups/server_users/dany/",
       "id": 3,
-      "lastSynced": 1376342800997
+      "lastSynced": 1407466766515
     },
     {
       "source": "server:~/",
       "target": "/Users/dany/backups/server_users/ec2-user/",
       "id": 4,
-      "lastSynced": 1376042800997
+      "lastSynced": 1407166766515
     },
     {
       "source": "/Users/dany/files/",
       "target": "server:/home/dany/backups/files/",
       "id": 5,
-      "lastSynced": 1376600709663
+      "lastSynced": 1407762766515
     },
     {
       "source": "/Users/dany/files/",
       "target": "/Volumes/1tbdrive/backups/files",
       "id": 6,
-      "lastSynced": 1376600709663
+      "lastSynced": 1407762766515
     },
     {
       "source": "/Volumes/1tbdrive/backups/",
       "target": "/Volumes/2tbdrive/backups/",
       "id": 7,
-      "lastSynced": 1373673107330
+      "lastSynced": 1400866766515
     }
   ],
   "maxid": 7
